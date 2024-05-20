@@ -81,12 +81,13 @@ const ContactForm = () => {
         name="user_mail"
       />
       <textarea
-        className={`flex w-80 h-20 items-center p-2 px-4 justify-between bg-white py-1 shadow-sm rounded-lg`}
+        style={{ resize: "none" }}
+        className="flex w-80 h-20 items-center p-2 px-4 justify-between bg-white py-1 shadow-sm rounded-lg"
         placeholder="Mensaje"
         name="user_message"
       />
       <button
-        className="rounded-xl px-3 py- bg-white hover:bg-slate-500 hover:text-white font-semibold "
+        className="rounded-xl px-3 py- bg-white hover:bg-slate-500 hover:text-white font-semibold"
         type="submit"
       >
         Enviar

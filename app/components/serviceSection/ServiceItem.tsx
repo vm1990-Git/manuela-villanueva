@@ -29,6 +29,8 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
       className="flex flex-col items-center justify-center text-center bg-white bg-opacity-20 text-white p-12 rounded-full h-52 w-52 font-semibold hover:bg-gradient-to-r duration-300"
       onMouseEnter={selectoToTrue}
       onMouseLeave={selectoToFalse}
+      onTouchStart={selectoToTrue}
+      onTouchEnd={selectoToFalse}
     >
       {selected ? (
         <span className="duration-400 text-sm animate-fade-up animate-once">
