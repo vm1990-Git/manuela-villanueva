@@ -29,12 +29,8 @@ const Questionary: React.FC<QuestionaryProps> = ({}) => {
           answer="Si, podés estar en cualquier parte del mundo. Utilizamos plataformas como Zoom y Teams.  Utilizo estándares de confidencialidad y calidad en la atención, incluso en el entorno virtual. Tu privacidad y bienestar son nuestra prioridad, sin importar la modalidad de consulta que elijas."
         />
         <QuestionaryItem
-          question="¿Cuáles son los síntomas que podrían indicar la necesidad de una consulta neurológica?"
+          question="¿Cuáles son los síntomas para consultar a una neuróloga?"
           answer="Convulsiones, dolores de cabeza, olvidos, mareos, alteración del sueño, ACV, Parkinson, alteraciones en el neurodesarrollo, trastorno del espectro autista, dolor lumbar o del ciático."
-        />
-        <QuestionaryItem
-          question="¿Cómo es la preparación de electroencefalograma?"
-          answer="Dormir 4 horas la noche previa, tener el pelo suelto sin productos."
         />
         <QuestionaryItem
           question="¿Qué es un electroencefalograma?"

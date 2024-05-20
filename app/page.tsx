@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   const HeaderDescription =
-    "¡Hola! Te doy la bienvenida a mi sitio web para conocernos un poco. Mi nombre es Manuela Villanueva, neuróloga formada en la UBA y en el Hospital Ramos Mejía de Buenos Aires. Me mudé a la ciudad más hermosa, San Martín de los Andes, donde estoy trabajando. Mi enfoque se centra en la atención médica integral y personalizada a cada uno de mis pacientes";
+    "¡Hola! Te doy la bienvenida a mi sitio web para conocernos un poco. Mi nombre es Manuela Villanueva, neuróloga formada en la UBA y en el Hospital Ramos Mejía de Buenos Aires. Me mudé a la ciudad más hermosa, San Martín de los Andes, donde estoy trabajando. Mi enfoque se centra en la atención médica integral y personalizada a cada uno de mis pacientes.";
 
   return (
     <div className="flex flex-col justify-center bg-dark-blue">
