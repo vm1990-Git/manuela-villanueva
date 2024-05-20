@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex items-center gap-2 rounded-full">
         <a
           className="flex justify-center items-center"
-          href="https://www.instagram.com/neurotabu/"
+          href="https://www.linkedin.com/in/manuelamariavillanueva"
           target="_blank"
         >
           <FaLinkedin size={27} />

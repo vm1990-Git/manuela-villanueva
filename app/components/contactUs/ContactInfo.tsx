@@ -8,7 +8,7 @@ import { GrInstagram } from "react-icons/gr";
 const ContactInfo = () => {
   return (
     <div className="flex justify-center items-start w-[90vw] md:w-96">
-      <div className="flex flex-col justify-center items-start text-white gap-2.5 ">
+      <div className="flex flex-col justify-center items-start text-white gap-2.5 max-w-80 md:max-w-none ">
         <div className="flex justify-center items-center gap-2 ">
           <FaPhoneAlt size={18} />
           <span className="font-semibold">+54 9 2972 53-9774</span>
