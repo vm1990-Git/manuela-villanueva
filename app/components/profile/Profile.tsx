@@ -23,19 +23,12 @@ const Profile = () => {
       />
       <span className="text-3xl font-semibold">Acerca de mí</span>
       <span className="text-center px-8 lg:px-52 xl:px-96">
-        ¡Hola! Te doy la bienvenida a mi sitio web para conocernos un poco. Mi
-        nombre es Manuela Villanueva. Nací, crecí y me formé en Buenos Aires. Me
-        recibí en la UBA de médica y después hice la especialidad de neurología
-        en un hospital público, el Hospital Ramos Mejía. Continué mi formación
-        enfocándome en epilepsia en el Hospital El Cruce, específicamente en el
-        servicio de Cirugía de la Epilepsia donde empecé un a estudiar la
-        conectividad cerebral mediante neuroimágenes, tema de mi doctorado. A
-        finales de 2023, tomé la decisión de mudarme a uno de los lugares más
-        hermosos que conozco, San Martín de los Andes. Ahora, me encuentro
-        viviendo y trabajando en SMA, donde espero poder seguir contribuyendo
-        todo lo que he aprendido al cuidado neurológico de la comunidad local.
-        Mi enfoque se centra en proporcionar atención médica integral y
-        personalizada a cada uno de mis pacientes.
+        Nací, crecí y me formé en Buenos Aires. Me recibí en la UBA de médica y
+        después hice la especialidad de neurología en un hospital público, el
+        Hospital Ramos Mejía. Continué enfocándome en epilepsia en el Hospital
+        El Cruce (servicio de Cirugía de la Epilepsia). Allí empecé a estudiar
+        la conectividad cerebral mediante Resonancia Magnética, temática de mi
+        doctorado que estoy desarrollando.
       </span>
 
       {expanded ? (

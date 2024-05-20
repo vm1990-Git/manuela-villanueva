@@ -29,32 +29,24 @@ const Questionary: React.FC<QuestionaryProps> = ({}) => {
           answer="Si, podés estar en cualquier parte del mundo. Utilizamos plataformas como Zoom y Teams.  Utilizo estándares de confidencialidad y calidad en la atención, incluso en el entorno virtual. Tu privacidad y bienestar son nuestra prioridad, sin importar la modalidad de consulta que elijas."
         />
         <QuestionaryItem
+          question="¿Cuáles son los síntomas que podrían indicar la necesidad de una consulta neurológica?"
+          answer="Convulsiones, dolores de cabeza, olvidos, mareos, alteración del sueño, ACV, Parkinson, alteraciones en el neurodesarrollo, trastorno del espectro autista, dolor lumbar o del ciático."
+        />
+        <QuestionaryItem
           question="¿Cómo es la preparación de electroencefalograma?"
           answer="Dormir 4 horas la noche previa, tener el pelo suelto sin productos."
         />
         <QuestionaryItem
-          question="¿Qué pasa si necesito cancelar mi cita?"
-          answer="Por favor, avísanos con al menos 24 horas de anticipación si necesitas cancelar o reprogramar tu cita para darle la posibilidad del turno a otros pacientes."
-        />
-        <QuestionaryItem
           question="¿Qué es un electroencefalograma?"
-          answer="Es un estudio para medir la actividad eléctrica del cerebro. Se colocan electrodos en el cuero cabelludo de la cabeza. Los electrodos son únicamente de registro, no liberan ninguna energía. "
+          answer="Es un estudio para medir la actividad eléctrica del cerebro que dura aproximadamente 40 minutos. Se colocan electrodos en el cuero cabelludo de la cabeza. Los electrodos son únicamente de registro, no liberan ninguna energía. Se utiliza fundamentalmente en el diagnóstico y seguimiento de epilepsia y trastornos del sueño. También es útil para la caracterización de desmayos, síncope, trastorno del neurodesarrollo y algunas lesiones cerebrales."
         />
         <QuestionaryItem
-          question="¿Cuánto dura un electroencefalograma?"
-          answer="La duración del estudio depende del tipo de estudio, es aproximadamente 40 minutos."
+          question="¿Cómo es la preparación de electroencefalograma?"
+          answer="Dormir 4 horas la noche previa, tener el pelo suelto sin productos. Tomar la medicación habitual, no hacer cambios."
         />
         <QuestionaryItem
           question="¿Haces electroencefalograma preocupacional?"
           answer="Si. En algunos trabajos o cursos lo solicitan como por ejemplo para el ejército, gendarmería, cursos de pesca o montañismo."
-        />
-        <QuestionaryItem
-          question="¿Tengo que dejar de tomar la medicación para el electroencefalograma?"
-          answer="No, tenés que tomar la medicación como siempre."
-        />
-        <QuestionaryItem
-          question="¿Cuáles son los síntomas que podrían indicar la necesidad de una consulta neurológica?"
-          answer="Convulsiones, dolores de cabeza, olvidos, mareos, alteración del sueño, ACV, Parkinson, alteraciones en el neurodesarrollo, trastorno del espectro autista, dolor lumbar o del ciático."
         />
       </div>
     </div>

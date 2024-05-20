@@ -22,13 +22,16 @@ export default function Home() {
     window.open("https://api.whatsapp.com/send/?phone=5492972539774");
   };
 
-  const lorem =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea saepe, maxime architecto repellat, impedit laudantium, neque non exercitationem corrupti minus quaerat eligendi aut nostrum nesciunt ex voluptate consequuntur ipsam distinctio? ";
+  const HeaderDescription =
+    "¡Hola! Te doy la bienvenida a mi sitio web para conocernos un poco. Mi nombre es Manuela Villanueva, neuróloga formada en la UBA y en el Hospital Ramos Mejía de Buenos Aires. Me mudé a la ciudad más hermosa, San Martín de los Andes, donde estoy trabajando. Mi enfoque se centra en la atención médica integral y personalizada a cada uno de mis pacientes";
 
   return (
     <div className="flex flex-col justify-center bg-dark-blue">
       <Navbar />
-      <Header title={"titulo"} description={lorem} />
+      <Header
+        title={"Dra. Manuela Villanueva"}
+        description={HeaderDescription}
+      />
       <TwoIconSection
         iconA={IoHome}
         iconsSize={90}

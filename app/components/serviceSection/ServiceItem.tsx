@@ -25,24 +25,36 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
   }, []);
 
   return (
-    <div
-      className="flex flex-col items-center justify-center text-center bg-white bg-opacity-20 text-white p-12 rounded-full h-52 w-52 font-semibold hover:bg-gradient-to-r duration-300"
-      onMouseEnter={selectoToTrue}
-      onMouseLeave={selectoToFalse}
-      onTouchStart={selectoToTrue}
-      onTouchEnd={selectoToFalse}
-    >
-      {selected ? (
-        <span className="duration-400 text-sm animate-fade-up animate-once">
-          {description}
-        </span>
-      ) : (
-        <>
-          <IconComponent size={iconSize} />
-          <span className="text-l pb-2">{title}</span>
-        </>
-      )}
-    </div>
+    <>
+      <div
+        className="flex flex-col items-center justify-center text-center bg-white bg-opacity-20 text-white sm:rounded-full h-24 sm:h-60 w-[100vw] sm:w-60 font-semibold"
+        onMouseEnter={selectoToTrue}
+        onMouseLeave={selectoToFalse}
+        onTouchStart={selectoToTrue}
+        onTouchEnd={selectoToFalse}
+      >
+        {selected ? (
+          <>
+            <div className="flex sm:hidden justify-center items-center w-80 animate-in fade-in duration-1000">
+              <IconComponent size={iconSize} />
+              <span className="w-72 px-2 text-base text-start ">
+                {description}
+              </span>
+            </div>
+            <div className="hidden sm:flex justify-center items-center p-4 animate-in fade-in duration-1000">
+              <span className="w-60 px-1 text-base text-center">
+                {description}
+              </span>
+            </div>
+          </>
+        ) : (
+          <div className="flex flex-row sm:flex-col justify-center items-center w-80 gap-2">
+            <IconComponent size={iconSize} />
+            <span className="text-lg pb-2 translate-y-1">{title}</span>
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

@@ -27,9 +27,7 @@ const ContactInfo = () => {
         </div>
         <div className="flex justify-center items-center gap-2 ">
           <MdWatchLater size={20} />
-          <span className="font-semibold">
-            Lun/Vie 09:00 a 18:00 Sab 10:00 a 14:00
-          </span>
+          <span className="font-semibold">Lun/Vie 09:00 a 19:00</span>
         </div>
         <div className="flex justify-center items-center gap-2 ">
           <FaLinkedin size={20} />

@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
       <div className="flex flex-col md:flex-row justify-center items-center md:bg-secondary rounded-3xl p-8">
         <div className="flex justify-end ">
           <Image
-            className="w-60 sm:w-72 md:w-96 sm:max-w-sm p-4 sm:p-12 pt-20"
+            className="w-64 sm:w-72 md:w-96 sm:max-w-sm p-4 sm:p-12 pt-20"
             src="/assets/image40t.png"
             alt="Picture of brain"
             width={500}
@@ -24,8 +24,8 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
         </div>
 
         <div className="flex flex-col md:max-w-sm p-4 sm:p-12 ">
-          <span className="font-bold text-2xl">{title}</span>
-          <span className="text-lg font-semi">{description}</span>
+          <span className="font-bold text-xl">{title}</span>
+          <span className=" font-semi">{description}</span>
         </div>
       </div>
     </div>
