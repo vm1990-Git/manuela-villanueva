@@ -30,8 +30,6 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
         className="flex flex-col items-center justify-center text-center bg-white bg-opacity-20 text-white sm:rounded-full h-24 sm:h-60 w-[100vw] sm:w-60 font-semibold"
         onMouseEnter={selectoToTrue}
         onMouseLeave={selectoToFalse}
-        onTouchStart={selectoToTrue}
-        onTouchEnd={selectoToFalse}
       >
         {selected ? (
           <>

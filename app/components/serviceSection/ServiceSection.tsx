@@ -2,7 +2,6 @@ import React from "react";
 import { FaBrain, FaCannabis } from "react-icons/fa";
 import { RiHealthBookFill } from "react-icons/ri";
 import { PiHeadCircuit } from "react-icons/pi";
-import { Gi3dHammer } from "react-icons/gi";
 
 import ServiceItem from "./ServiceItem";
 
@@ -38,7 +37,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
           title="Cannabis Medicinal"
           icon={FaCannabis}
           iconSize={60}
-          description="Acompañamiento terapéutico de cannabis medicinal"
+          description="Acompañamiento terapéutico de cannabis medicinal."
         />
       </div>
     </div>
