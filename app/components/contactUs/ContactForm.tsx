@@ -57,7 +57,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="flex justify-center items-center flex-col gap-4 xl:self-center"
+      className="flex justify-center items-center flex-col gap-4 xl:self-center md:w-96"
       ref={form}
       onSubmit={sendEmail}
       onChange={handleInputChange}

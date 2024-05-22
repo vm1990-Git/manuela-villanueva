@@ -11,7 +11,7 @@ const ContactUs = () => {
       >
         Contáctanos
       </span>
-      <div className="flex justify-center flex-wrap gap-8 py-4 z-10">
+      <div className="flex justify-center flex-wrap gap-8 md:gap-0 py-4 z-10">
         <ContactForm />
         <ContactInfo />
       </div>

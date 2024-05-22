@@ -33,7 +33,7 @@ const Profile = () => {
 
       {expanded ? (
         <div className="flex flex-col justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-start justify-items-start gap-2 xl:px-96 p-4">
+          <div className="grid grid-cols-1 items-start justify-items-start gap-2 xl:px-96 p-4">
             <ProfileItem detail="Medicina: Universidad de Buenos Aires (2016)" />
             <ProfileItem detail="Neurología: Hospital Ramos Mejía (2021)" />
             <ProfileItem detail="Epilepsia: Hospital El Cruce (2023)" />

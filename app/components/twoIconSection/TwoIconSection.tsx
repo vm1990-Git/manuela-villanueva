@@ -25,7 +25,7 @@ const TwoIconSection: React.FC<TwoIconSectionProps> = ({
   actionB,
 }) => {
   return (
-    <div className="w-full h-96 md:h-72 gap-8 flex flex-col md:flex-row justify-center items-center text-center bg-tertiary text-white">
+    <div className="h-96 md:h-72 gap-8 flex flex-col md:flex-row justify-center items-center text-center bg-tertiary text-white">
       <Icon
         icon={iconA}
         size={iconsSize}

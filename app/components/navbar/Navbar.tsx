@@ -100,6 +100,7 @@ const Navbar = () => {
                     label="Inicio"
                     onClick={() => {
                       scrollTo("header-section");
+                      toggleOpen();
                     }}
                   />
                   <MenuItem
