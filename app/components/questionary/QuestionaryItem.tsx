@@ -39,9 +39,7 @@ const QuestionaryItem: React.FC<QuestionaryItemProps> = ({
         </div>
       </div>
       {open && (
-        <div
-          className={`{sticky flex px-4 py-2 bg-gray-100 rounded-t-none rounded-b-2xl -z-10 w-[90vw] max-w-[750px] xl:w-[45vw] animate-fade-down animate-once transition animate-duration-300}`}
-        >
+        <div className="sticky flex bg-gray-100 px-4 py-2 rounded-t-none rounded-b-2xl -z-10 w-[90vw] max-w-[750px] xl:w-[45vw] animate-fade-down animate-once transition animate-duration-300">
           {answer}
         </div>
       )}

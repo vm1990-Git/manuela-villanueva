@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
 
         <div className="flex flex-col md:max-w-sm p-4 sm:p-12 ">
           <span className="font-bold text-xl">{title}</span>
-          <span className=" font-semi">{description}</span>
+          <span className="font-semi">{description}</span>
         </div>
       </div>
     </div>
