@@ -34,7 +34,9 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
         {selected ? (
           <>
             <div className="flex sm:hidden justify-center items-center w-80 animate-in fade-in duration-1000">
-              <IconComponent size={iconSize} />
+              <div className="xl:flex justify-start md:justify-center p-4 sm:p-0">
+                <IconComponent size={iconSize} />
+              </div>
               <span className="w-72 px-2 text-base text-start ">
                 {description}
               </span>
@@ -46,9 +48,13 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
             </div>
           </>
         ) : (
-          <div className="flex flex-row sm:flex-col justify-center items-center w-80 gap-2">
-            <IconComponent size={iconSize} />
-            <span className="text-lg pb-2 translate-y-1">{title}</span>
+          <div className="flex flex-row sm:flex-col justify-start items-center w-80 gap-2">
+            <div className="xl:flex justify-start md:justify-center p-4 sm:p-0">
+              <IconComponent size={iconSize} />
+            </div>
+            <span className="text-start md:text-center text-lg pb-2 translate-y-1  md:w-full">
+              {title}
+            </span>
           </div>
         )}
       </div>
