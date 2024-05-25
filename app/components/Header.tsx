@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
       className="w-full h-screen flex flex-col md:flex-row justify-center items-center bg-white"
       id="header-section"
     >
-      <div className="flex flex-col md:flex-row justify-center items-center md:bg-secondary rounded-3xl mt-20">
+      <div className="flex flex-col md:flex-row justify-center items-center md:bg-secondary rounded-3xl md:mt-20">
         <div className="">
           <Image
             className="w-64 sm:w-72 md:w-96 sm:max-w-sm p-4 sm:p-12 pt-20"
