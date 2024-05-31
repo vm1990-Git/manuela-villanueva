@@ -52,7 +52,7 @@ export default function Home() {
       <TwoIconSection
         iconsSize={90}
         iconA={IoLogoWhatsapp}
-        titleA="Llamanos o Escribinos"
+        titleA="Escribinos a Whatsapp"
         descriptionA="+54 9 2972 53-9774"
         actionA={openWhatsapp}
         iconB={IoMdMailOpen}
