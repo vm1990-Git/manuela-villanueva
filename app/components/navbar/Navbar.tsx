@@ -8,13 +8,12 @@ import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const scrollTo = useScrollTo();
 
-  const menuRef = useRef<HTMLDivElement>(null);
-
   const toggleOpen = useCallback(() => {
-    setIsOpen((value) => !value);
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   }, []);
 
   const closeMenu = useCallback(() => {
@@ -23,22 +22,19 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (
-        !(event.target instanceof Node) ||
-        !document.contains(event.target as Node)
-      ) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         closeMenu();
       }
+    };
 
-      if (isOpen) {
-        document.addEventListener("mousedown", handleClickOutside);
-      } else {
-        document.removeEventListener("mousedown", handleClickOutside);
-      }
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
 
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen, closeMenu]);
 
