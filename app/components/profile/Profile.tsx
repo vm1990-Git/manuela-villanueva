@@ -40,7 +40,7 @@ const Profile = () => {
             <ProfileItem detail="Maestría Neurociencias: Universidad Arturo Jaureche (2024)" />
             <ProfileItem detail="Doctorado en Neuroimagen funcional: Universidad de Buenos Aires (actualidad)" />
             <ProfileItem detail="Ensayos Clínicos de medicación" />
-            <ProfileItem detail="Cursos de Estadística, Cannabis Medicinal, Ensayos Clínicos, Epilepsia, Neurofisiología " />
+            <ProfileItem detail="Cursos de Estadística, Ensayos Clínicos, Epilepsia, Neurofisiología " />
           </div>
         </div>
       ) : (

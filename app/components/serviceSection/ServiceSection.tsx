@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBrain, FaCannabis } from "react-icons/fa";
+import { FaBrain } from "react-icons/fa";
 import { RiHealthBookFill } from "react-icons/ri";
 import { PiHeadCircuit } from "react-icons/pi";
 
@@ -32,12 +32,6 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
           icon={RiHealthBookFill}
           iconSize={60}
           description="Evaluación de trastorno de espectro-autista, déficit de atención e hiperactividad y Neurodesarrollo."
-        />
-        <ServiceItem
-          title="Cannabis Medicinal"
-          icon={FaCannabis}
-          iconSize={60}
-          description="Acompañamiento terapéutico de cannabis medicinal."
         />
       </div>
     </div>
