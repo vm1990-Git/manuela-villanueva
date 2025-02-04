@@ -1,16 +1,16 @@
 "use client";
 
-import useScrollTo from "../../hooks/useScrollTo";
 import Logo from "./Logo";
 import MenuItem from "./MenuItem";
 import React, { useCallback, useState, useEffect, useRef } from "react";
 import { HiMenu } from "react-icons/hi";
+import MenuItemAccordion from "./MenuItemAccordion";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-
-  const scrollTo = useScrollTo();
+  const router = useRouter();
 
   const toggleOpen = useCallback(() => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
@@ -44,93 +44,120 @@ const Navbar = () => {
         <Logo />
         <div>
           <div>
-            <div className="hidden lg:flex">
+            <div className="hidden xl:flex">
               <MenuItem
                 label="Inicio"
                 onClick={() => {
-                  scrollTo("header-section");
+                  router.push("/#header-section");
                 }}
               />
               <MenuItem
                 label="Acerca de mí"
                 onClick={() => {
-                  scrollTo("profile-section");
+                  router.push("/#profile-section");
                 }}
               />
-              <MenuItem
+              <MenuItemAccordion
                 label="Nuestros Servicios"
-                onClick={() => {
-                  scrollTo("service-section");
-                }}
+                options={[
+                  {
+                    label: "Electroencefalograma",
+                    onClick: () =>
+                      router.push("/servicios/electroencefalograma"),
+                  },
+                  {
+                    label: "Consulta Neurológica",
+                    onClick: () =>
+                      router.push("/servicios/consulta_neurologica"),
+                  },
+                  {
+                    label: "Escalas Neurológicas",
+                    onClick: () =>
+                      router.push("/servicios/escalas_neurologicas"),
+                  },
+                ]}
               />
               <MenuItem
                 label="Preguntas Frecuentes"
-                onClick={() => {
-                  scrollTo("questionary-section");
-                }}
+                onClick={() => router.push("/#questionary-section")}
               />
               <MenuItem
                 label="Contáctanos"
-                onClick={() => {
-                  scrollTo("contact-section");
-                }}
+                onClick={() => router.push("/#contact-section")}
               />
               <MenuItem
                 label="Ubicación"
-                onClick={() => {
-                  scrollTo("location-section");
-                }}
+                onClick={() => router.push("/#location-section")}
               />
             </div>
           </div>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex xl:hidden">
           <div className="flex gap-2 relative px-4" ref={menuRef}>
             <div onClick={toggleOpen} className="rounded-full p-1.5 transition">
               <HiMenu size={30} />
             </div>
             {isOpen && (
-              <div className="absolute w-lvw bg-secondary right-0 translate-y-14 pl-4">
+              <div className="absolute w-lvw bg-secondary right-0 translate-y-14 pl-4 shadow-md">
                 <div>
                   <MenuItem
                     label="Inicio"
                     onClick={() => {
-                      scrollTo("header-section");
+                      router.push("/#header-section");
                       toggleOpen();
                     }}
                   />
                   <MenuItem
                     label="Acerca de mí"
                     onClick={() => {
-                      scrollTo("profile-section");
+                      router.push("/#profile-section");
                       toggleOpen();
                     }}
                   />
-                  <MenuItem
+                  <MenuItemAccordion
                     label="Nuestros Servicios"
-                    onClick={() => {
-                      scrollTo("service-section");
-                      toggleOpen();
-                    }}
+                    options={[
+                      {
+                        label: "Electroencefalograma",
+                        onClick: () => {
+                          router.push("/servicios/electroencefalograma");
+                          toggleOpen();
+                        },
+                      },
+                      {
+                        label: "Consulta Neurológica",
+                        onClick: () => {
+                          router.push("/servicios/consulta_neurologica");
+                          toggleOpen();
+                        },
+                      },
+                      {
+                        label: "Escalas Neurológicas",
+                        onClick: () => {
+                          router.push("/servicios/escalas_neurologicas");
+                          toggleOpen();
+                        },
+                      },
+                    ]}
                   />
                   <MenuItem
                     label="Preguntas Frecuentes"
                     onClick={() => {
-                      scrollTo("questionary-section");
+                      router.push("/#questionary-section");
                       toggleOpen();
                     }}
                   />
                   <MenuItem
                     label="Contáctanos"
                     onClick={() => {
-                      scrollTo("contact-section");
+                      router.push("/#contact-section");
                       toggleOpen();
                     }}
                   />
                   <MenuItem
                     label="Ubicación"
                     onClick={() => {
-                      scrollTo("location-section");
+                      router.push("/#location-section");
                       toggleOpen();
                     }}
                   />

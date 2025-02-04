@@ -7,3 +7,7 @@
   --custom-green-soft: #bed5b0;
   --custom-green-softer: #e4efde;
 }
+
+html {
+  scroll-behavior: smooth;
+}

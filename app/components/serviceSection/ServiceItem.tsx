@@ -1,62 +1,37 @@
-import React, { useCallback, useState } from "react";
+import { useRouter } from "next/navigation";
+import React from "react";
 import { IconType } from "react-icons";
 
 interface ServiceItemProps {
   title: string;
-  description: string;
   icon: IconType;
   iconSize: number;
+  id: string;
 }
 
 const ServiceItem: React.FC<ServiceItemProps> = ({
   title,
-  description,
   icon: IconComponent,
   iconSize,
+  id,
 }) => {
-  const [selected, setSelected] = useState(false);
-
-  const selectoToFalse = useCallback(() => {
-    setSelected(false);
-  }, []);
-
-  const selectoToTrue = useCallback(() => {
-    setSelected(true);
-  }, []);
+  const router = useRouter();
 
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center text-center bg-white bg-opacity-20 text-white sm:rounded-full h-24 sm:h-60 w-[100vw] sm:w-60 font-semibold"
-        onMouseEnter={selectoToTrue}
-        onMouseLeave={selectoToFalse}
+        className="flex flex-col items-center justify-center text-center bg-white bg-opacity-20 text-white sm:rounded-full h-24 sm:h-60 w-[100vw] sm:w-60 font-semibold cursor-pointer
+        transition duration-300 ease-in-out transform hover:scale-105"
+        onClick={() => router.push(`servicios/${id}`)}
       >
-        {selected ? (
-          <>
-            <div className="flex sm:hidden justify-center items-center w-80 animate-in fade-in duration-1000">
-              <div className="xl:flex justify-start md:justify-center p-4 sm:p-0">
-                <IconComponent size={iconSize} />
-              </div>
-              <span className="w-72 px-2 text-base text-start ">
-                {description}
-              </span>
-            </div>
-            <div className="hidden sm:flex justify-center items-center p-4 animate-in fade-in duration-1000">
-              <span className="w-60 px-1 text-base text-center">
-                {description}
-              </span>
-            </div>
-          </>
-        ) : (
-          <div className="flex flex-row sm:flex-col justify-start items-center w-80 gap-2">
-            <div className="xl:flex justify-start md:justify-center p-4 sm:p-0">
-              <IconComponent size={iconSize} />
-            </div>
-            <span className="text-start md:text-center text-lg pb-2 translate-y-1  md:w-full">
-              {title}
-            </span>
+        <div className="flex flex-row sm:flex-col justify-start items-center w-80 gap-2">
+          <div className="xl:flex justify-start md:justify-center p-4 sm:p-0">
+            <IconComponent size={iconSize} />
           </div>
-        )}
+          <span className="text-start md:text-center text-lg pb-2 translate-y-1  md:w-full">
+            {title}
+          </span>
+        </div>
       </div>
     </>
   );

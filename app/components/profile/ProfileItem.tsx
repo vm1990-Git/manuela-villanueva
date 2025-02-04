@@ -3,7 +3,7 @@ import React from "react";
 import { AiOutlineCaretRight } from "react-icons/ai";
 
 interface ProfileItemProps {
-  detail: string;
+  detail: string | React.ReactNode;
 }
 
 const ProfileItem: React.FC<ProfileItemProps> = ({ detail }) => {

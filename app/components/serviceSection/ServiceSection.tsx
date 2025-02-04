@@ -14,24 +14,24 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
       id="service-section"
     >
       <h2 className="font-bold text-4xl">Nuestros Servicios</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center items-center pt-10 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center pt-10 gap-4">
         <ServiceItem
           title="Electroencefalograma"
           icon={PiHeadCircuit}
           iconSize={60}
-          description="Incluye activaciones (fotoluminiscencia e hiperventilación)."
+          id="electroencefalograma"
         />
         <ServiceItem
-          title="Consulta neurológica"
+          title="Consulta Neurológica"
           icon={FaBrain}
           iconSize={60}
-          description="Diagnóstico y tratamiento de enfermedades neurológicas. Examen físico neurológico."
+          id="consulta_neurologica"
         />
         <ServiceItem
-          title="Test de Neurodesarrollo"
+          title="Escalas Neurológicas"
           icon={RiHealthBookFill}
           iconSize={60}
-          description="Evaluación de trastorno de espectro-autista, déficit de atención e hiperactividad y Neurodesarrollo."
+          id="escalas_neurologicas"
         />
       </div>
     </div>

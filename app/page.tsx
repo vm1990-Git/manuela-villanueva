@@ -8,26 +8,39 @@ import Profile from "./components/profile/Profile";
 import ServiceSection from "./components/serviceSection/ServiceSection";
 import Questionary from "./components/questionary/Questionary";
 import Location from "./components/Location";
-import Navbar from "./components/navbar/Navbar";
 import Header from "./components/Header";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import useScrollTo from "./hooks/useScrollTo";
 import ContactUs from "./components/contactUs/ContactUs";
-import Footer from "./components/Footer";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const scrollTo = useScrollTo();
+  const router = useRouter();
 
   const openWhatsapp = () => {
     window.open("https://api.whatsapp.com/send/?phone=5492972539774");
   };
 
-  const HeaderDescription =
-    "¡Hola! Te doy la bienvenida a mi sitio web para conocernos un poco. Mi nombre es Manuela Villanueva, neuróloga formada en la UBA y en el Hospital Ramos Mejía de Buenos Aires. Me mudé a la ciudad más hermosa, San Martín de los Andes, donde estoy trabajando. Mi enfoque se centra en la atención médica integral y personalizada a cada uno de mis pacientes.";
+  const HeaderDescription = (
+    <>
+      Soy neuróloga especialista en epilepsia, formada en la UBA y en el
+      Hospital Ramos Mejía de Buenos Aires. Actualmente trabajo en{" "}
+      <strong>San Martín de los Andes</strong> y{" "}
+      <strong>Junín de los Andes</strong>, donde realizo estudios de{" "}
+      <strong
+        className="cursor-pointer hover:text-tertiary"
+        onClick={() => router.push("/servicios/electroencefalograma")}
+      >
+        electroencefalograma
+      </strong>{" "}
+      y brindo atención médica integral y personalizada a cada uno de mis
+      pacientes. <br />
+    </>
+  );
 
   return (
     <div className="flex flex-col">
-      <Navbar />
       <Header
         title={"Dra. Manuela Villanueva"}
         description={HeaderDescription}
@@ -66,13 +79,12 @@ export default function Home() {
       <FloatingWhatsApp
         phoneNumber="+54 9 2972 53-9774"
         accountName="Dra. Manuela Villanueva"
-        avatar="/assets/WhatsAppProfile.png"
+        avatar="/assets/WhatsAppProfile.webp"
         chatMessage="Hola, dejame tu consulta y en breve me contactaré."
         buttonStyle={{ bottom: 15, right: 15 }}
         chatboxStyle={{ bottom: 80, right: 5 }}
       />
       <Location />
-      <Footer />
     </div>
   );
 }

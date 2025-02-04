@@ -1,15 +1,17 @@
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Logo = () => {
+  const router = useRouter();
   return (
     <div
       className="flex justify-center items-center gap-1 p-2 py-4 cursor-pointer"
-      onClick={() => window.location.reload()}
+      onClick={() => router.push("/#header-section")}
     >
       <Image
         className="w-12"
-        src={"/assets/logo2.png"}
+        src={"/assets/NuevoLogo5.webp"}
         alt="Logo image"
         width={500}
         height={500}
