@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
           <div className="flex justify-center items-center w-full flex-wrap">
             <Image
               className=""
-              src="/assets/imagen3.jpeg"
+              src="/assets/Imagen3.webp"
               alt="Imagen Header"
               height={850}
               width={850}

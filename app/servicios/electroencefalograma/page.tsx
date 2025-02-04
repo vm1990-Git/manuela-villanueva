@@ -73,7 +73,7 @@ const Index = () => {
                 />
               </div>
             }
-            imageSrc={"/assets/imagen9.jpeg"}
+            imageSrc={"/assets/Imagen9.webp"}
             imagePosition="left"
           />
         </div>
@@ -92,7 +92,7 @@ const Index = () => {
                 <ProfileItem detail="Diagnóstico de trastornos del neurodesarrollo, como autismo o TDAH." />
               </div>
             }
-            imageSrc={"/assets/imagen1.jpeg"}
+            imageSrc={"/assets/Imagen1.webp"}
           />
         </div>
         <div
@@ -165,7 +165,7 @@ const Index = () => {
             <ServicesDescription
               title="¿Cuándo están los resultados?"
               description="Los resultados suelen estar disponibles en pocos días, dependiendo de la complejidad del informe."
-              imageSrc={"/assets/imagen3.jpeg"}
+              imageSrc={"/assets/Imagen3.webp"}
               imagePosition="left"
               small
             />

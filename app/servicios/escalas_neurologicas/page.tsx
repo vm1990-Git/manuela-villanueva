@@ -32,7 +32,7 @@ const Index = () => {
               title="Screening de Autismo"
               description="
               Identifica características asociadas al trastorno del espectro autista mediante observación y cuestionarios."
-              imageSrc={"/assets/imagen2.jpeg"}
+              imageSrc={"/assets/Imagen2.webp"}
               imagePosition="left"
             />
           </div>
@@ -58,7 +58,7 @@ const Index = () => {
             <ServicesDescription
               title="Pautas de Neurodesarrollo"
               description="Detecta alteraciones en hitos motores, cognitivos y sociales."
-              imageSrc={"/assets/imagen4.jpeg"}
+              imageSrc={"/assets/Imagen4.webp"}
             />
           </div>
         </div>
