@@ -52,8 +52,8 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
           <div className="flex justify-center items-center w-full flex-wrap">
             <Image
               className=""
-              src="/assets/imagen3.webp"
-              alt="Picture of brain"
+              src="/assets/imagen3.jpeg"
+              alt="Imagen Header"
               height={850}
               width={850}
             />
