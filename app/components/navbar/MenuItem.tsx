@@ -12,7 +12,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ label, onClick }) => {
     <div
       onClick={onClick}
       className="
-                py-2
+                py-3
                 px-2
                 xl:py-6
                 hover:text-white

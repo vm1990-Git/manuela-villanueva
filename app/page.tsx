@@ -49,7 +49,7 @@ export default function Home() {
         iconA={IoHome}
         iconsSize={90}
         titleA="Atención Presencial"
-        descriptionA="Gral. Roca 1374, San Martín de los Andes"
+        descriptionA="San Martín de los Andes y Junín de los Andes"
         actionA={() => {
           scrollTo("location-section");
         }}

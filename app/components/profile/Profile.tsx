@@ -18,7 +18,7 @@ const Profile = () => {
         <Image
           className="h-60 w-60 rounded-3xl"
           src="/assets/profile1.webp"
-          alt="Foto Perfil"
+          alt="Dra. Manuela Villanueva"
           width={500}
           height={500}
         />

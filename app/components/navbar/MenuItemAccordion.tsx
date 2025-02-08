@@ -22,19 +22,6 @@ const MenuItemAccordion: React.FC<MenuItemAccordionProps> = ({
 
   const toggleAccordion = () => setIsOpen((prev) => !prev);
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
   const handleOptionClick = (onClick: () => void) => {
     onClick();
     setIsOpen(false);
@@ -44,8 +31,8 @@ const MenuItemAccordion: React.FC<MenuItemAccordionProps> = ({
     <div className="relative" ref={menuRef}>
       <div
         onClick={toggleAccordion}
-        className="
-          py-2
+        className={`
+          pt-3
           px-2
           xl:py-6
           hover:text-white
@@ -58,7 +45,8 @@ const MenuItemAccordion: React.FC<MenuItemAccordionProps> = ({
           items-center
           text-center
           gap-1
-        "
+          ${isOpen ? "py-0" : "py-3"}
+          `}
       >
         {label}
         <span
@@ -71,18 +59,22 @@ const MenuItemAccordion: React.FC<MenuItemAccordionProps> = ({
       </div>
       <div
         className={`
-    xl:absolute
-    bg-secondary
-    pr-4
-    xl:shadow-md
-    rounded-b-lg
-    font-semibold
-    transform
-    transition-all
-    origin-top
-    border-secondary
-    xl:translate-y-1
-    ${isOpen ? "block scale-y-100 opacity-100" : "hidden scale-y-0 opacity-0"}
+          xl:absolute
+          bg-secondary
+          pr-4
+          xl:shadow-md
+          rounded-b-lg
+          font-semibold
+          transform
+          transition-all
+          origin-top
+          border-secondary
+          xl:translate-y-1
+          ${
+            isOpen
+              ? "block scale-y-100 opacity-100"
+              : "hidden scale-y-0 opacity-0"
+          }
   `}
         style={{
           transformOrigin: "top",

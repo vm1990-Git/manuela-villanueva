@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import {
   IoIosArrowDropdownCircle,
@@ -9,11 +10,13 @@ import {
 interface QuestionaryItemProps {
   question: string;
   answer: string;
+  route?: string;
 }
 
 const QuestionaryItem: React.FC<QuestionaryItemProps> = ({
   question,
   answer,
+  route,
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -21,8 +24,10 @@ const QuestionaryItem: React.FC<QuestionaryItemProps> = ({
     setOpen(!open);
   };
 
+  const router = useRouter();
+
   return (
-    <div className="flex flex-col justify-center items-center transition text-base">
+    <div className="flex flex-col justify-center items-center transition text-base cursor-pointer">
       <div
         className={`flex w-[90vw] max-w-[750px] xl:w-[45vw] items-center p-2 px-4 justify-between bg-gray-100 py-1 shadow-md ${
           !open ? "rounded-2xl" : "rounded-t-2xl"
@@ -39,8 +44,20 @@ const QuestionaryItem: React.FC<QuestionaryItemProps> = ({
         </div>
       </div>
       {open && (
-        <div className="sticky flex bg-gray-100 px-4 py-2 rounded-t-none rounded-b-2xl -z-10 w-[90vw] max-w-[750px] xl:w-[45vw] animate-fade-down animate-once transition animate-duration-300">
-          {answer}
+        <div className="sticky flex bg-gray-100 px-4 py-2 rounded-t-none rounded-b-2xl w-[90vw] max-w-[750px] xl:w-[45vw] shadow-inner animate-fade-down animate-once transition animate-duration-300">
+          <div className="flex flex-col">
+            <span>
+              {answer}{" "}
+              {route && (
+                <span
+                  className="font-semibold hover:text-tertiary cursor-pointer"
+                  onClick={() => router.push(route)}
+                >
+                  Más información
+                </span>
+              )}
+            </span>
+          </div>
         </div>
       )}
     </div>

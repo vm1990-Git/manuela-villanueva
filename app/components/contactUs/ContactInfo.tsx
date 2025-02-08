@@ -7,8 +7,8 @@ import { GrInstagram } from "react-icons/gr";
 
 const ContactInfo = () => {
   return (
-    <div className="flex justify-center items-start w-[90vw] md:w-96 ">
-      <div className="flex flex-col justify-center items-start text-white gap-2 max-w-80 md:max-w-none ">
+    <div className="flex justify-center items-start w-[90vw] md:w-96 my-2">
+      <div className="flex flex-col justify-center items-start text-white gap-2.5 max-w-80 md:max-w-none ">
         <div className="flex justify-center items-center gap-2 ">
           <FaPhoneAlt size={18} />
           <span className="font-semibold">+54 9 2972 53-9774</span>
@@ -22,13 +22,13 @@ const ContactInfo = () => {
         <div className="flex justify-center items-center gap-2 ">
           <FaLocationDot size={20} />
           <span className="font-semibold">
-            Gral. Roca 1374, San Martín de los Andes, Neuquén
+            Centro Médico del Sur, Sarmiento 489, SMA, Neuquén
           </span>
         </div>
         <div className="flex justify-center items-center gap-2 ">
           <FaLocationDot size={20} />
           <span className="font-semibold">
-            Héctor Mutio 130, Junín de los Andes, Neuquén
+            INAS, Héctor Mutio 130, Junín de los Andes, Neuquén
           </span>
         </div>
         <div className="flex justify-center items-center gap-2 ">

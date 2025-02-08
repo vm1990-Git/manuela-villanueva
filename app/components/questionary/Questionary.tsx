@@ -34,16 +34,10 @@ const Questionary: React.FC<QuestionaryProps> = ({}) => {
             answer="Convulsiones, dolores de cabeza, olvidos, mareos, alteración del sueño, ACV, Parkinson, alteraciones en el neurodesarrollo, trastorno del espectro autista, dolor lumbar o del ciático."
           />
           <QuestionaryItem
-            question="¿Qué es un electroencefalograma?"
-            answer="Es un estudio para medir la actividad eléctrica del cerebro que dura aproximadamente 40 minutos. Se colocan electrodos en el cuero cabelludo de la cabeza. Los electrodos son únicamente de registro, no liberan ninguna energía. Se utiliza fundamentalmente en el diagnóstico y seguimiento de epilepsia y trastornos del sueño. También es útil para la caracterización de desmayos, síncope, trastorno del neurodesarrollo y algunas lesiones cerebrales."
-          />
-          <QuestionaryItem
-            question="¿Cómo es la preparación de electroencefalograma?"
-            answer="Dormir 4 horas la noche previa, tener el pelo suelto sin productos. Tomar la medicación habitual, no hacer cambios."
-          />
-          <QuestionaryItem
             question="¿Haces electroencefalograma preocupacional?"
-            answer="Si. En algunos trabajos o cursos lo solicitan como por ejemplo para el ejército, gendarmería, cursos de pesca o montañismo."
+            answer="Sí. En algunos trabajos o cursos lo solicitan, como por ejemplo
+                para el ejército, gendarmería, cursos de pesca o montañismo."
+            route="/servicios/electroencefalograma"
           />
         </div>
       </div>

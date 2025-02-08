@@ -17,7 +17,7 @@ const Icon: React.FC<IconProps> = ({
 }) => {
   return (
     <div
-      className="flex flex-col justify-center items-center w-full md:w-96 cursor-pointer"
+      className="flex flex-col justify-center items-center w-full max-w-[400px] cursor-pointer"
       onClick={action}
     >
       <IconComponent size={iSize} />

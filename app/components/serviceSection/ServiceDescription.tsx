@@ -46,7 +46,7 @@ const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
           <Image
             className="object-cover md:min-h-96"
             src={imageSrc}
-            alt="Imagen"
+            alt="Imagen de Servicio"
             width={1000}
             height={1000}
             draggable="false"

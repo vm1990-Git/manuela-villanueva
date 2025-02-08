@@ -3,24 +3,27 @@ import { MdRadioButtonChecked, MdRadioButtonUnchecked } from "react-icons/md";
 
 const Location = () => {
   const locationSM =
-    "https://maps.google.com/maps?width=100%25&height=600&hl=es&q=gral.roca%201374,%20san%20martin%20de%20los%20andes,%20neuquen+(Consultorio%20Lic.%20Pena)&t=&z=15&ie=UTF8&iwloc=B&output=embed";
+    "https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Sarmiento%20489,%20San%20Mart%C3%ADn%20de%20los%20Andes,%20Neuqu%C3%A9n+(Centro%20M%C3%A9dico%20del%20Sur)&t=&z=15&ie=UTF8&iwloc=B&output=embed";
 
   const locationJ =
     "https://maps.google.com/maps?width=100%25&height=600&hl=es&q=H%C3%A9ctor%20Mutio%20130,%20Jun%C3%ADn%20de%20los%20Andes,%20Neuqu%C3%A9n,%20Argentina+(Mi%20nombre%20de%20egocios)&t=&z=15&ie=UTF8&iwloc=B&output=embed";
 
   const [currentLocation, setCurrentLocation] = useState(locationSM);
-  const [locationName, setLocationName] = useState(
-    "Gral. Roca 1374, San Martín de los Andes, Neuquén"
+  const [locationName, setLocationName] = useState("Centro Médico del Sur");
+  const [locationaddress, setLocationaddress] = useState(
+    "Sarmiento 489, San Martín de los Andes, Neuquén"
   );
 
   const setLocationSM = () => {
     setCurrentLocation(locationSM);
-    setLocationName("Gral. Roca 1374, San Martín de los Andes, Neuquén");
+    setLocationName("Centro Médico del Sur");
+    setLocationaddress("Sarmiento 489, San Martín de los Andes, Neuquén");
   };
 
   const setLocationJ = () => {
     setCurrentLocation(locationJ);
-    setLocationName("Héctor Mutio 130, Junín de los Andes, Neuquén");
+    setLocationName("INAS");
+    setLocationaddress("Héctor Mutio 130, Junín de los Andes, Neuquén");
   };
 
   return (
@@ -54,9 +57,14 @@ const Location = () => {
             )}
           </button>
         </div>
-        <span className="flex justify-center font-semibold bg-white text-sm py-2">
-          {locationName}
-        </span>
+        <div className="text-center py-1">
+          <span className="flex justify-center font-bold bg-white text-xl">
+            {locationName}
+          </span>
+          <span className="flex justify-center font-semibold bg-white text-sm">
+            {locationaddress}
+          </span>
+        </div>
         <div style={{ width: "100%", backgroundColor: "white" }}>
           <iframe
             width="100%"

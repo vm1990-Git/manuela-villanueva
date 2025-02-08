@@ -53,7 +53,7 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
             <Image
               className=""
               src="/assets/Imagen3.webp"
-              alt="Imagen Header"
+              alt="Neuróloga Dra. Manuela Villanueva"
               height={850}
               width={850}
             />
