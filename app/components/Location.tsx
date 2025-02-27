@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { MdRadioButtonChecked, MdRadioButtonUnchecked } from "react-icons/md";
 
@@ -73,6 +75,25 @@ const Location = () => {
             title="Google Maps"
             loading="lazy"
           ></iframe>
+          <div className="w-full flex justify-center">
+            <div className="flex flex-col justify-center items-center w-full pt-4 px-4 font-semibold">
+              <p className="mb-2 sm:text-lg">
+                Fácil acceso desde distintas ciudades de la Patagonia:
+              </p>
+              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-1 gap-x-2 text-start ">
+                <li>- Aluminé</li>
+                <li>- Bariloche</li>
+                <li>- Las Coloradas</li>
+                <li>- Meliquina</li>
+                <li>- Piedra del Águila</li>
+                <li>- Villa La Angostura</li>
+                <li>- Pilolil</li>
+                <li>- Villa Traful</li>
+                <li>- Zapala</li>
+                <li>- Pucón (Chile)</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </>

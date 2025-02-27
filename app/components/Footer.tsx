@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";

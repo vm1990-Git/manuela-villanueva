@@ -1,42 +1,7 @@
-//Old Header
-// import Image from "next/image";
-// import React from "react";
+"use client";
 
-// interface HeaderProps {
-//   title: string;
-//   description: React.ReactNode;
-// }
-
-// const Header: React.FC<HeaderProps> = ({ title, description }) => {
-//   return (
-//     <div
-//       className="w-full h-screen flex flex-col md:flex-row justify-center items-center bg-white"
-//       id="header-section"
-//     >
-//       <div className="flex flex-col md:flex-row justify-center items-center md:bg-secondary rounded-3xl md:mt-20">
-//         <div className="">
-//           <Image
-//             className="w-64 sm:w-72 md:w-96 sm:max-w-sm p-4 sm:p-12 pt-20"
-//             src="/assets/image40t.png"
-//             alt="Picture of brain"
-//             width={500}
-//             height={500}
-//           />
-//         </div>
-
-//         <div className="flex flex-col md:max-w-sm p-4 sm:p-12 ">
-//           <span className="font-bold text-xl">{title}</span>
-//           <span className="font-semi">{description}</span>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Header;
-
-//New Header
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 interface HeaderProps {
@@ -68,4 +33,32 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
   );
 };
 
-export default Header;
+const Page: React.FC = () => {
+  const router = useRouter();
+
+  return (
+    <div className="flex flex-col">
+      <Header
+        title="Dra. Manuela Villanueva"
+        description={
+          <>
+            Soy neuróloga especialista en epilepsia, formada en la UBA y en el
+            Hospital Ramos Mejía de Buenos Aires. Actualmente trabajo en{" "}
+            <strong>San Martín de los Andes</strong> y{" "}
+            <strong>Junín de los Andes</strong>, donde realizo estudios de{" "}
+            <strong
+              className="cursor-pointer hover:text-tertiary"
+              onClick={() => router.push("/servicios/electroencefalograma")}
+            >
+              electroencefalograma
+            </strong>{" "}
+            y brindo atención médica integral y personalizada a cada uno de mis
+            pacientes. <br />
+          </>
+        }
+      />
+    </div>
+  );
+};
+
+export default Page;

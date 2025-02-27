@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FaBrain } from "react-icons/fa";
 import { RiHealthBookFill } from "react-icons/ri";

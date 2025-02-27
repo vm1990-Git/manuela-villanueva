@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import ProfileItem from "./ProfileItem";
 import Image from "next/image";

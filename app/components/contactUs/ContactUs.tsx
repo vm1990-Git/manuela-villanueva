@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import ContactInfo from "./ContactInfo";
 import ContactForm from "./ContactForm";

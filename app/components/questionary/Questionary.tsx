@@ -1,3 +1,5 @@
+"use client";
+
 import QuestionaryItem from "./QuestionaryItem";
 
 interface QuestionaryProps {}
@@ -38,6 +40,10 @@ const Questionary: React.FC<QuestionaryProps> = ({}) => {
             answer="Sí. En algunos trabajos o cursos lo solicitan, como por ejemplo
                 para el ejército, gendarmería, cursos de pesca o montañismo."
             route="/servicios/electroencefalograma"
+          />
+          <QuestionaryItem
+            question="¿Haces consultas o electroencefalograma a domicilio?"
+            answer="Sí, realizo consultas neurológicas y estudios de electroencefalograma a domicilio en San Martín de los Andes y alrededores."
           />
         </div>
       </div>

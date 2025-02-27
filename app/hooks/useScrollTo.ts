@@ -1,3 +1,5 @@
+"use client";
+
 import { useCallback } from "react";
 
 const useScrollTo = (): ((targetId: string) => void) => {

@@ -1,3 +1,5 @@
+"use client";
+
 import { useRouter } from "next/navigation";
 import React from "react";
 import { IconType } from "react-icons";
