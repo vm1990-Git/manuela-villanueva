@@ -8,7 +8,7 @@ const Location = () => {
     "https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Sarmiento%20489,%20San%20Mart%C3%ADn%20de%20los%20Andes,%20Neuqu%C3%A9n+(Centro%20M%C3%A9dico%20del%20Sur)&t=&z=15&ie=UTF8&iwloc=B&output=embed";
 
   const locationJ =
-    "https://maps.google.com/maps?width=100%25&height=600&hl=es&q=H%C3%A9ctor%20Mutio%20130,%20Jun%C3%ADn%20de%20los%20Andes,%20Neuqu%C3%A9n,%20Argentina+(Mi%20nombre%20de%20egocios)&t=&z=15&ie=UTF8&iwloc=B&output=embed";
+    "https://maps.google.com/maps?width=100%25&height=600&hl=es&q=H%C3%A9ctor%20Mutio%20130,%20Jun%C3%ADn%20de%20los%20Andes+(Mi%20nombre%20de%20egocios)&t=&z=15&ie=UTF8&iwloc=B&output=embed";
 
   const [currentLocation, setCurrentLocation] = useState(locationSM);
   const [locationName, setLocationName] = useState("Centro Médico del Sur");
